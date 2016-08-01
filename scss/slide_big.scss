@@ -1,4 +1,4 @@
-@import "icons";
+@import "includes";
 @import "responsive";
 @import "uilang";
 @import "variables";
@@ -58,3 +58,23 @@
 	font-size: 19px;
 	margin-top: 15px;
 }
+.slideContainer__left-arrow {
+	@include arrow();
+	top: 130px;
+    left: 0;
+    border-right: 30px solid #36aad6;
+    cursor: pointer;
+    &:hover {
+    	border-right: 30px solid #f07431;
+    }
+}
+.slideContainer__right-arrow {
+	@include arrow();
+	top: 130px;
+    right: 0;
+    border-left: 30px solid #36aad6;
+    cursor: pointer;
+    &:hover {
+    	border-left: 30px solid #f07431;
+    }
+} 
