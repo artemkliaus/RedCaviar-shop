@@ -1,0 +1,16 @@
+@mixin responsive($type) {
+	@if $type == phone {
+		@media only screen and (max-width: 499px) {@content}
+	} @else if $type == tablet {
+		@media only screen and (min-width: 500px) and (max-width: 768px) {@content}
+	} @else if $type == laptop {
+		@media only screen and (min-width: 769px) and (max-width: 1000px) {@content}
+	}
+}
+/*
+@mixin responsive($type) {
+	@if $type == percent {
+		@media only screen and (max-width: 1000px) {@content}
+	}
+}
+*/

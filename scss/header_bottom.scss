@@ -1,0 +1,128 @@
+@import "icons";
+@import "responsive";
+@import "uilang";
+@import "variables";
+
+.h_bottom {
+	position: relative;
+	height: 120px;
+	margin-top: 20px; 
+}
+.logo {
+	display: inline-block;
+	vertical-align: top;
+	@include responsive(tablet) {width: 25%;}
+	@include responsive(phone) {display: none;}	
+}
+.logo__image{
+	@include responsive(tablet) {width: 100%;}
+}
+.basket {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 220px;
+	height: 70px;
+	margin-left: 50px;
+	@include responsive(tablet) {margin-left: 5px;}
+	@include responsive(phone) {margin-left: 0;}
+}
+.basket__image {
+	display: inline-block;
+	vertical-align: top;
+}
+.basket__link {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 15px;
+	color: #36aad6; 
+}
+.basket__price {
+	font-size: $basket-price-font-size;
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+.basket__count {
+	font-size: $basket-price-font-size + 1px;
+}
+.delivery {
+	width: 180px;
+	height: 50px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 35px;
+	@include responsive(laptop) {display: none;}
+	@include responsive(tablet) {display: none;}
+	@include responsive(phone) {display: none;}
+}
+.delivery__image {
+	margin-top: 10px;
+}
+.delivery__link {
+	margin-left: 5px;
+    font-size: 12px;
+    color: #35a9d4;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    vertical-align: top;
+    line-height: 50px;
+}
+.time {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 70px;
+	margin-left: 19px;
+	@include responsive(laptop) {position: absolute; right: 5px;}
+	@include responsive(tablet) {position: absolute; right: 5px;}
+	@include responsive(phone) {position: absolute; right: 5px;}
+}
+.time__worktime {
+	text-align: right;
+	font-size: 12px;
+}
+.time__phone {
+	color: #35a9d4;
+	text-align: right;
+	font-size: 27px;
+	@include responsive(tablet) {font-size: 20px;}
+	@include responsive(phone) {font-size: 20px;}
+}
+.time__call {
+	@include button(null, 130px, 25px);
+	color: white;
+	font-size: 13px;
+	position: absolute;
+	right: 0;
+}
+.search__field {
+	@include input();	
+    border-left: 1px solid #e3dacf;
+    border-top: 1px solid #e3dacf;
+    border-bottom: 1px solid #e3dacf;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    width: 670px;
+    height: 35px;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    @include responsive(laptop) {width: 63%;}
+    @include responsive(tablet) {width: 93%;}
+    @include responsive(phone) {width: 91%;}    
+}
+.search__find {
+	@include input();
+	width: 20px;
+	height: 23px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 7px 5px 5px;
+	border-radius: 0 4px 4px 0;
+	border-right: 1px solid #e3dacf;
+    border-top: 1px solid #e3dacf;
+    border-bottom: 1px solid #e3dacf;
+    border-left: none;
+}

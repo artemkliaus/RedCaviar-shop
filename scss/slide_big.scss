@@ -1,0 +1,60 @@
+@import "icons";
+@import "responsive";
+@import "uilang";
+@import "variables";
+.slideContainer {
+	height: 350px;
+	position: relative;
+	margin-top: 15px; 
+}
+.slide1__image {
+	margin-left: 70px;
+}
+.slide1-right {
+	display: inline-block;
+	vertical-align: top;
+	width: 439px;
+}
+.slide1-right__h2 {
+	display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    font-size: 38px;
+    font-weight: 400;
+}
+.slide1-right__text {
+	margin-left: 10px;
+	font-size: 13px;
+	width: $slider-text-width;
+}
+.slide1-right__price {
+	width: $slider-text-width;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;	
+	font-size: 16px;
+	color: red;
+}
+.slide1-right__price_margin {
+	margin-top: 20px;
+}
+.slide1-right__buy-button {
+	@include button();
+	width: 270px;
+	height: 50px;
+	margin-left: 10px;
+	border-radius: 10px;
+	font-size: 21px;
+	color: white;
+}
+.slide1-right__buy-button-image {
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+}
+.slide1-right__buy-button-text {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 19px;
+	margin-top: 15px;
+}

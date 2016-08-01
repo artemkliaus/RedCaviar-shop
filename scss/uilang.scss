@@ -1,0 +1,13 @@
+@import "inc_classes";
+
+.show-top-menu {
+	@include responsive(laptop) {
+	  @include show-top-menu-styles();
+	}
+	@include responsive(tablet) {
+	  @include show-top-menu-styles();
+	}
+	@include responsive(phone) {
+	  @include show-top-menu-styles();
+	}
+}

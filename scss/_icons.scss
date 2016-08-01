@@ -1,0 +1,26 @@
+@import "variables";
+@mixin button($background-image: null, $width: $icon-size, $height: $icon-size) {
+	display: inline-block;
+	width: $width;
+	height: $height;		
+	background-image: $background-image, $icon-color;
+	background-repeat: no-repeat;
+	border-radius: 4px;		
+
+	&:hover {
+		background-image: $background-image, linear-gradient(to top, #6dccea, #3aacd6);
+		cursor: pointer;
+	}
+}
+
+@mixin input() {
+	width: 120px;
+	height: 25px;
+	background: #f6f2ee;
+	vertical-align: top;
+	border: 1px solid #e3dacf;
+	font-size: 14px;
+	padding-left: 5px;
+	color: #e3dacf;
+	border-radius: 4px;
+}

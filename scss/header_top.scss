@@ -1,0 +1,115 @@
+@import "icons";
+@import "responsive";
+@import "uilang";
+@import "variables";
+.h_top {
+	position: relative;
+	@include block();
+	height: $top-height;
+}
+.h_top_line {
+	border-bottom: 1px solid #f1ece6;
+}
+nav {display: inline-block; vertical-align: top;}
+.list {
+	display: inline-block;
+	vertical-align: top;
+	@include responsive(laptop) {
+		display: none;
+	}
+	@include responsive(tablet) {
+		display: none;
+	}
+	@include responsive(phone) {
+		display: none;
+	}
+}
+.list-element {
+	display: inline-block;
+	margin-right: $top-block-margin;
+	line-height: $top-height;
+	@include responsive(laptop) {
+		display: block;
+		background: white;
+		margin: 0;
+	}
+	@include responsive(tablet) {
+		display: block;
+		background: white;
+		margin: 0;
+	}
+	@include responsive(phone) {
+		display: block;
+		background: white;
+		margin: 0;
+	}
+}
+.list-link {
+	font-size: $link-size;
+	font-weight: bold;
+	color: #4f4f4f;
+	&:hover {
+		color: #3aacd6;
+		text-decoration: none;
+	}
+}
+.icons {
+	vertical-align: top;
+	margin-left: $top-block-margin; 
+	position: relative;
+	width: 150px;
+	height: $top-height;
+	display: inline-block;
+	@include responsive(laptop) {width: 230px; margin-left: $top-block-margin * 2;}
+	@include responsive(tablet) {width: 230px; margin-left: $top-block-margin;}
+	@include responsive(phone) {display: none;}
+}
+.ok,.twit, .fb, .vk, .goo {
+	margin: 12px 2px 0;
+	@include responsive(laptop) {margin: 10px;}
+	@include responsive(tablet) {margin: 10px;}
+}
+.ok {@include button(url(../img/icon_ok.png));}
+.twit {@include button(url(../img/icon_twit.png));}
+.fb {@include button(url(../img/icon_fb.png));}
+.vk {@include button(url(../img/icon_vk.png));}
+.goo {@include button(url(../img/icon_goo.png));}
+.authorize {
+	display: inline-block;
+	margin-left: $top-block-margin;
+	height: $top-height;
+	display: inline-block;
+	vertical-align: top;
+	line-height: $top-height;	
+	@include responsive(laptop) {position: absolute; right: 5px;}
+	@include responsive(tablet) {position: absolute; right: 5px;}
+	@include responsive(phone) {position: absolute; right: 5px;}
+}
+form {
+	vertical-align: top;
+	display: inline-block;	
+}
+.authorize__registr {
+	font-size: $link-size;
+	color: #36aad6;
+}
+.authorize__login, .authorize__pass {
+	@include input();
+	margin: 10px 0 0 7px;		
+	@include responsive(tablet) {width: 80px;}
+	@include responsive(phone) {width: 80px;}
+}
+.authorize__submit {
+	margin: 10px 0 0 7px;
+	@include button(url(../img/icon_key.png));	
+}
+.button_menu {
+	@include button(null, 40px, 40px);
+	font-size: 30px;
+	color: white;
+	display: none;
+	margin: 4px;
+	@include responsive(laptop) {display: inline-block;}
+	@include responsive(tablet) {display: inline-block;}
+	@include responsive(phone) {display: inline-block;}
+}
