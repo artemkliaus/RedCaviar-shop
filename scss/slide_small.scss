@@ -1,0 +1,37 @@
+@import "includes";
+@import "responsive";
+@import "uilang";
+@import "variables";
+.smallSlideContainer {
+	position: relative;
+	margin-top: 20px;
+}
+.smallCarousel {
+	position: relative;
+	width: 100%;
+}
+.s-slide1__image {
+	@include small_item();
+}
+.smallSlideContainer__arrow {
+	@include arrow(13px, 48px);	
+}
+.smallSlideContainer__arrow_left {
+	left: 0;	
+	background: url(../img/mini_arrow_left.png) no-repeat;
+    background-position: -13px;
+    top: calc(50% - 24px);
+    &:hover {
+    	background-position: 0;
+    }  
+}
+.smallSlideContainer__arrow_right {
+	right: 0;
+	background: url(../img/mini_arrow_right.png) no-repeat;
+    background-position: 0;
+    top: calc(50% - 24px);   
+    &:hover {
+    	background-position: -13px;
+    }  
+}
+

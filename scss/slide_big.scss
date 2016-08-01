@@ -9,31 +9,41 @@
 }
 .slide1__image {
 	margin-left: 70px;
+	@include responsive(laptop) {width: 40%;}
+	@include responsive(tablet) {width: 50%; margin-left: 0;}
+	@include responsive(phone) {width: 50%; margin-left: 0;}
 }
 .slide1-right {
 	display: inline-block;
 	vertical-align: top;
 	width: 439px;
+	font-size: 16px;
+	@include responsive(laptop) {width: 50%;}
+	@include responsive(tablet) {width: 48%;}
+	@include responsive(phone) {width: 48%;}
 }
 .slide1-right__h2 {
 	display: inline-block;
     vertical-align: top;
     margin-left: 10px;
-    font-size: 38px;
+    font-size: 2.375em;
     font-weight: 400;
+    @include responsive(tablet) {margin-left: 2%;}
+    @include responsive(phone) {margin-left: 2%; font-size: 1.5em;}
 }
 .slide1-right__text {
 	margin-left: 10px;
-	font-size: 13px;
+	font-size: 0.8125em;
 	width: $slider-text-width;
+	@include responsive(tablet) {width: 100%; margin-left: 2%;}
+	@include responsive(phone) {width: 100%; margin-left: 2%;}
 }
 .slide1-right__price {
-	width: $slider-text-width;
-	display: inline-block;
-	vertical-align: top;
 	margin-left: 10px;	
-	font-size: 16px;
+	font-size: 1em;
 	color: red;
+	@include responsive(tablet) {margin-left: 2%;}
+	@include responsive(phone) {margin-left: 2%;}
 }
 .slide1-right__price_margin {
 	margin-top: 20px;
@@ -46,6 +56,8 @@
 	border-radius: 10px;
 	font-size: 21px;
 	color: white;
+	@include responsive(tablet) {width: 60px;}
+	@include responsive(phone) {width: 60px;}
 }
 .slide1-right__buy-button-image {
 	display: inline-block;
@@ -57,24 +69,25 @@
 	vertical-align: top;
 	font-size: 19px;
 	margin-top: 15px;
+	@include responsive(tablet) {display: none;}
+	@include responsive(phone) {display: none;}
 }
-.slideContainer__left-arrow {
-	@include arrow();
-	top: 130px;
-    left: 0;
-    border-right: 30px solid #36aad6;
-    cursor: pointer;
-    &:hover {
-    	border-right: 30px solid #f07431;
-    }
+.slideContainer__arrow {
+	@include arrow();	
 }
-.slideContainer__right-arrow {
-	@include arrow();
-	top: 130px;
-    right: 0;
-    border-left: 30px solid #36aad6;
-    cursor: pointer;
+.slideContainer__arrow_left {
+	left: 0;	
+	background: url(../img/arrow-left.png) no-repeat;
+    background-position: -1px;
     &:hover {
-    	border-left: 30px solid #f07431;
-    }
-} 
+    	background-position: -30px;
+    }  
+}
+.slideContainer__arrow_right {
+	right: 0;
+	background: url(../img/arrow-right.png) no-repeat;
+    background-position: -34px;
+    &:hover {
+    	background-position: -8px;
+    }  
+}

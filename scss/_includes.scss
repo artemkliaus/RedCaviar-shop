@@ -24,11 +24,18 @@
 	color: #e3dacf;
 	border-radius: 4px;
 }
-@mixin arrow() {
+@mixin arrow($width: 26px, $height: 120px) {
 	position: absolute;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-top: 50px solid transparent;     
-    border-bottom: 50px solid transparent;
+    width: $width;
+	height: $height;
+	top: calc(50% - 60px);
+	cursor: pointer;
+}
+@mixin small_item() {
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	height: 98%;
+	margin: 1%;
+	margin-left:2%;
 }
