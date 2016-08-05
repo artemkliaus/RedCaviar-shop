@@ -1,15 +1,15 @@
 @import "responsive";
 @import "variables";
-body {
+body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.body_back {
 	background-image: url(../img/body_back.jpg);
 	background-size: 100%;
+    background-position: 0 1%;
 	background-repeat: repeat-x;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	@include responsive(laptop) {background: none;}
 	@include responsive(tablet) {background: none;}
 	@include responsive(phone) {background: none;}
 }
-
 .container {
 	position: relative;
 	width: 1000px;
@@ -29,3 +29,19 @@ body {
 target / context = result
 какой нужен / какой по умолчанию = результат
 */
+main {
+	background: #f1ece6;
+	margin-top: 20px;
+}
+.main-container {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 30px;
+	@include responsive(laptop) {width: 100%;}
+	@include responsive(tablet) {width: 100%;}
+	@include responsive(phone) {width: 100%;} 
+}
+.space {
+	margin-left: 18px;
+}

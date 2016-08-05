@@ -4,7 +4,7 @@
 	} @else if $type == tablet {
 		@media only screen and (min-width: 500px) and (max-width: 768px) {@content}
 	} @else if $type == laptop {
-		@media only screen and (min-width: 769px) and (max-width: 1000px) {@content}
+		@media only screen and (min-width: 769px) and (max-width: 1024px) {@content}
 	}
 }
 /*
