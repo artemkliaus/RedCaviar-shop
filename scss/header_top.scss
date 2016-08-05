@@ -57,11 +57,10 @@ nav {display: inline-block; vertical-align: top;}
 	vertical-align: top;
 	margin-left: $top-block-margin; 
 	position: relative;
-	width: 150px;
 	height: $top-height;
 	display: inline-block;
-	@include responsive(laptop) {width: 230px; margin-left: $top-block-margin * 2;}
-	@include responsive(tablet) {width: 230px; margin-left: $top-block-margin;}
+	@include responsive(laptop) {margin-left: $top-block-margin * 2;}
+	@include responsive(tablet) {margin-left: $top-block-margin;}
 	@include responsive(phone) {display: none;}
 }
 .ok,.twit, .fb, .vk, .goo {

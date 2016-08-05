@@ -39,3 +39,15 @@
 	margin: 1%;
 	margin-left:2%;
 }
+@mixin show-top-menu-styles() {
+	display: block !important;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	margin-right: 0;
+}
+
+.red-bold {
+	color: red;
+	font-weight: 600;
+}
